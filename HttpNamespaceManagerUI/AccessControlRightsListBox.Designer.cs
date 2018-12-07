@@ -36,9 +36,9 @@ namespace HttpNamespaceManager.UI
             // 
             // panelListBox
             // 
-            this.panelListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelListBox.BackColor = System.Drawing.SystemColors.Window;
             this.panelListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelListBox.Controls.Add(this.tableRights);
@@ -49,9 +49,9 @@ namespace HttpNamespaceManager.UI
             // 
             // tableRights
             // 
-            this.tableRights.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableRights.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableRights.AutoScroll = true;
             this.tableRights.ColumnCount = 1;
             this.tableRights.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
@@ -60,14 +60,14 @@ namespace HttpNamespaceManager.UI
             this.tableRights.Name = "tableRights";
             this.tableRights.RowCount = 1;
             this.tableRights.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableRights.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 127F));
+            this.tableRights.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 122F));
             this.tableRights.Size = new System.Drawing.Size(143, 122);
-            this.tableRights.TabIndex = 1;
+            this.tableRights.TabIndex = 0;
             // 
             // tableHeader
             // 
-            this.tableHeader.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableHeader.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableHeader.AutoSize = true;
             this.tableHeader.ColumnCount = 1;
             this.tableHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -76,7 +76,7 @@ namespace HttpNamespaceManager.UI
             this.tableHeader.RowCount = 1;
             this.tableHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableHeader.Size = new System.Drawing.Size(143, 20);
-            this.tableHeader.TabIndex = 2;
+            this.tableHeader.TabIndex = 0;
             // 
             // AccessControlRightsListBox
             // 

@@ -103,7 +103,8 @@ namespace HttpNamespaceManager.UI
                             Size = new Size(15, 14),
                             CheckAlign = ContentAlignment.TopCenter,
                             Dock = DockStyle.Fill,
-                            Checked = GetRightValue(type, right)
+                            Checked = GetRightValue(type, right),
+                            TabStop = true
                         };
                         var checkedHandler = new CheckAceTypeCheckedHandler(this, type, right);
                         checkAceType.CheckedChanged += new EventHandler(checkedHandler.CheckAceType_Checked);

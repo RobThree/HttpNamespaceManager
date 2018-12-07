@@ -16,7 +16,6 @@ namespace HttpNamespaceManager.UI
             InitializeComponent();
             Text = title;
             labelPrompt.Text = prompt;
-            Size = new Size(Math.Max(labelPrompt.Width + 31, 290), labelPrompt.Height + 103);
         }
 
         public static DialogResult Show(string title, string prompt, out string result)

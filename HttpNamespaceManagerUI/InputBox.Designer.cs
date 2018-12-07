@@ -30,59 +30,61 @@ namespace HttpNamespaceManager.UI
         {
             this.labelPrompt = new System.Windows.Forms.Label();
             this.textInput = new System.Windows.Forms.TextBox();
-            this.buttonCancel = new System.Windows.Forms.Button();
-            this.buttonOK = new System.Windows.Forms.Button();
+            this.ButtonCancel = new System.Windows.Forms.Button();
+            this.ButtonOK = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelPrompt
             // 
-            this.labelPrompt.AutoSize = true;
+            this.labelPrompt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelPrompt.Location = new System.Drawing.Point(13, 13);
             this.labelPrompt.Name = "labelPrompt";
-            this.labelPrompt.Size = new System.Drawing.Size(43, 13);
+            this.labelPrompt.Size = new System.Drawing.Size(286, 32);
             this.labelPrompt.TabIndex = 0;
             this.labelPrompt.Text = "Prompt:";
             // 
             // textInput
             // 
-            this.textInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.textInput.Location = new System.Drawing.Point(12, 29);
+            this.textInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textInput.Location = new System.Drawing.Point(12, 48);
             this.textInput.Name = "textInput";
-            this.textInput.Size = new System.Drawing.Size(260, 20);
+            this.textInput.Size = new System.Drawing.Size(287, 20);
             this.textInput.TabIndex = 1;
             // 
-            // buttonCancel
+            // ButtonCancel
             // 
-            this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(197, 55);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancel.TabIndex = 3;
-            this.buttonCancel.Text = "Cancel";
-            this.buttonCancel.UseVisualStyleBackColor = true;
+            this.ButtonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.ButtonCancel.Location = new System.Drawing.Point(224, 74);
+            this.ButtonCancel.Name = "ButtonCancel";
+            this.ButtonCancel.Size = new System.Drawing.Size(75, 23);
+            this.ButtonCancel.TabIndex = 3;
+            this.ButtonCancel.Text = "Cancel";
+            this.ButtonCancel.UseVisualStyleBackColor = true;
             // 
-            // buttonOK
+            // ButtonOK
             // 
-            this.buttonOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonOK.Location = new System.Drawing.Point(116, 55);
-            this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(75, 23);
-            this.buttonOK.TabIndex = 2;
-            this.buttonOK.Text = "OK";
-            this.buttonOK.UseVisualStyleBackColor = true;
+            this.ButtonOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.ButtonOK.Location = new System.Drawing.Point(143, 74);
+            this.ButtonOK.Name = "ButtonOK";
+            this.ButtonOK.Size = new System.Drawing.Size(75, 23);
+            this.ButtonOK.TabIndex = 2;
+            this.ButtonOK.Text = "OK";
+            this.ButtonOK.UseVisualStyleBackColor = true;
             // 
             // InputBox
             // 
-            this.AcceptButton = this.buttonOK;
+            this.AcceptButton = this.ButtonOK;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(284, 90);
-            this.Controls.Add(this.buttonOK);
-            this.Controls.Add(this.buttonCancel);
+            this.CancelButton = this.ButtonCancel;
+            this.ClientSize = new System.Drawing.Size(311, 109);
+            this.Controls.Add(this.ButtonOK);
+            this.Controls.Add(this.ButtonCancel);
             this.Controls.Add(this.textInput);
             this.Controls.Add(this.labelPrompt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -92,6 +94,7 @@ namespace HttpNamespaceManager.UI
             this.Name = "InputBox";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Title";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -102,7 +105,7 @@ namespace HttpNamespaceManager.UI
 
         private System.Windows.Forms.Label labelPrompt;
         private System.Windows.Forms.TextBox textInput;
-        private System.Windows.Forms.Button buttonCancel;
-        private System.Windows.Forms.Button buttonOK;
+        private System.Windows.Forms.Button ButtonCancel;
+        private System.Windows.Forms.Button ButtonOK;
     }
 }

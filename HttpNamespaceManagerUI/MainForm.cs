@@ -11,10 +11,10 @@ namespace HttpNamespaceManager.UI
     public partial class MainForm : Form
     {
         private HttpApi nsManager;
-        Dictionary<string, SecurityDescriptor> nsTable;
+        private Dictionary<string, SecurityDescriptor> nsTable;
 
-        NamespaceManagerAction action = NamespaceManagerAction.None;
-        string initialUrl = null;
+        private NamespaceManagerAction action = NamespaceManagerAction.None;
+        private string initialUrl = null;
 
         public MainForm()
         {

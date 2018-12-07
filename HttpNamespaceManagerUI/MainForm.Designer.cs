@@ -57,7 +57,7 @@ namespace HttpNamespaceManager.UI
             this.ButtonAdd.Location = new System.Drawing.Point(230, 636);
             this.ButtonAdd.Name = "ButtonAdd";
             this.ButtonAdd.Size = new System.Drawing.Size(75, 26);
-            this.ButtonAdd.TabIndex = 3;
+            this.ButtonAdd.TabIndex = 1;
             this.ButtonAdd.Text = "Add";
             this.ButtonAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ButtonAdd.UseVisualStyleBackColor = true;
@@ -83,7 +83,7 @@ namespace HttpNamespaceManager.UI
             this.ButtonRemove.Location = new System.Drawing.Point(392, 636);
             this.ButtonRemove.Name = "ButtonRemove";
             this.ButtonRemove.Size = new System.Drawing.Size(75, 26);
-            this.ButtonRemove.TabIndex = 1;
+            this.ButtonRemove.TabIndex = 3;
             this.ButtonRemove.Text = "Remove";
             this.ButtonRemove.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ButtonRemove.UseVisualStyleBackColor = true;

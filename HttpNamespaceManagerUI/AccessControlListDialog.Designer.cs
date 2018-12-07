@@ -88,7 +88,7 @@ namespace HttpNamespaceManager.UI
             this.ButtonRemove.Location = new System.Drawing.Point(299, 326);
             this.ButtonRemove.Name = "ButtonRemove";
             this.ButtonRemove.Size = new System.Drawing.Size(75, 23);
-            this.ButtonRemove.TabIndex = 4;
+            this.ButtonRemove.TabIndex = 5;
             this.ButtonRemove.Text = "Remove";
             this.ButtonRemove.UseVisualStyleBackColor = true;
             this.ButtonRemove.Click += new System.EventHandler(this.ButtonRemove_Click);
@@ -99,7 +99,7 @@ namespace HttpNamespaceManager.UI
             this.ButtonAdd.Location = new System.Drawing.Point(218, 326);
             this.ButtonAdd.Name = "ButtonAdd";
             this.ButtonAdd.Size = new System.Drawing.Size(75, 23);
-            this.ButtonAdd.TabIndex = 5;
+            this.ButtonAdd.TabIndex = 4;
             this.ButtonAdd.Text = "Add...";
             this.ButtonAdd.UseVisualStyleBackColor = true;
             this.ButtonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
@@ -111,7 +111,7 @@ namespace HttpNamespaceManager.UI
             this.ButtonCancel.Location = new System.Drawing.Point(299, 513);
             this.ButtonCancel.Name = "ButtonCancel";
             this.ButtonCancel.Size = new System.Drawing.Size(75, 23);
-            this.ButtonCancel.TabIndex = 9;
+            this.ButtonCancel.TabIndex = 8;
             this.ButtonCancel.Text = "Cancel";
             this.ButtonCancel.UseVisualStyleBackColor = true;
             // 
@@ -122,7 +122,7 @@ namespace HttpNamespaceManager.UI
             this.ButtonOK.Location = new System.Drawing.Point(218, 513);
             this.ButtonOK.Name = "ButtonOK";
             this.ButtonOK.Size = new System.Drawing.Size(75, 23);
-            this.ButtonOK.TabIndex = 10;
+            this.ButtonOK.TabIndex = 7;
             this.ButtonOK.Text = "OK";
             this.ButtonOK.UseVisualStyleBackColor = true;
             // 
@@ -136,7 +136,7 @@ namespace HttpNamespaceManager.UI
             this.AclListPermissions.Name = "AclListPermissions";
             this.AclListPermissions.SelectedUser = null;
             this.AclListPermissions.Size = new System.Drawing.Size(362, 143);
-            this.AclListPermissions.TabIndex = 11;
+            this.AclListPermissions.TabIndex = 6;
             // 
             // AccessControlListDialog
             // 
@@ -158,6 +158,7 @@ namespace HttpNamespaceManager.UI
             this.MinimumSize = new System.Drawing.Size(300, 413);
             this.Name = "AccessControlListDialog";
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Permissions";
             this.Load += new System.EventHandler(this.AccessControlListDialog_Load);
             this.ResumeLayout(false);

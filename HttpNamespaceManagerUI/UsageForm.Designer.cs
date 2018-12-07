@@ -44,7 +44,8 @@ namespace HttpNamespaceManager.UI
             // ButtonOK
             // 
             this.ButtonOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonOK.Location = new System.Drawing.Point(200, 25);
+            this.ButtonOK.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.ButtonOK.Location = new System.Drawing.Point(200, 48);
             this.ButtonOK.Name = "ButtonOK";
             this.ButtonOK.Size = new System.Drawing.Size(75, 23);
             this.ButtonOK.TabIndex = 1;
@@ -54,15 +55,16 @@ namespace HttpNamespaceManager.UI
             // 
             // UsageForm
             // 
+            this.AcceptButton = this.ButtonOK;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(287, 58);
+            this.CancelButton = this.ButtonOK;
+            this.ClientSize = new System.Drawing.Size(287, 81);
             this.Controls.Add(this.ButtonOK);
             this.Controls.Add(this.labelUsage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "UsageForm";
             this.Text = "Usage";
-            this.Load += new System.EventHandler(this.UsageForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
