@@ -18,4 +18,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ---
 
-Icon made by [Freepik](https://www.freepik.com/) from www.flaticon.com licensed by CC 3.0 BY
+Icon made by [Freepik](https://www.flaticon.com/free-icon/http_269092) from www.flaticon.com licensed by CC 3.0 BY
