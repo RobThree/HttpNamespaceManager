@@ -138,7 +138,6 @@ namespace HttpNamespaceManager.Lib
         {
             var urlAclConfig = new HTTP_SERVICE_CONFIG_URLACL_SET();
             urlAclConfig.KeyDesc.pUrlPrefix = urlPrefix;
-            //urlAclConfig.ParamDesc.pStringSecurityDescriptor = acl.ToString();
 
             var pUrlAclConfig = Marshal.AllocHGlobal(Marshal.SizeOf(urlAclConfig));
 
@@ -168,88 +167,28 @@ namespace HttpNamespaceManager.Lib
         internal const uint NO_ERROR = 0;
         internal const uint HTTP_INITIALIZE_CONFIG = 2;
 
-        /*
-         * ULONG HttpInitialize(
-         *     HTTPAPI_VERSION Version,
-         *     ULONG Flags,
-         *     PVOID pReserved
-         * );
-         */
         [DllImport("Httpapi.dll")]
         internal static extern uint HttpInitialize(HTTPAPI_VERSION Version, uint Flags, IntPtr pReserved);
 
-        /*
-         * ULONG HttpTerminate(
-         *     ULONG Flags,
-         *     PVOID pReserved
-         * );
-         */
         [DllImport("Httpapi.dll")]
         internal static extern uint HttpTerminate(uint Flags, IntPtr pReserved);
 
-        /*
-         * ULONG HttpSetServiceConfiguration(
-         *     HANDLE ServiceHandle,
-         *     HTTP_SERVICE_CONFIG_ID ConfigId,
-         *     PVOID pConfigInformation,
-         *     ULONG ConfigInformationLength,
-         *     LPOVERLAPPED pOverlapped
-         * );
-         */
         [DllImport("Httpapi.dll")]
         internal static extern uint HttpSetServiceConfiguration(IntPtr ServiceHandle, HTTP_SERVICE_CONFIG_ID ConfigId, IntPtr pConfigInformation, uint ConfigInformationLength, IntPtr pOverlapped);
 
-        /*
-         * ULONG HttpQueryServiceConfiguration(
-         *     HANDLE ServiceHandle,
-         *     HTTP_SERVICE_CONFIG_ID ConfigId,
-         *     PVOID pInputConfigInfo,
-         *     ULONG InputConfigInfoLength,
-         *     PVOID pOutputConfigInfo,
-         *     ULONG OutputConfigInfoLength,
-         *     PULONG pReturnLength,
-         *     LPOVERLAPPED pOverlapped
-         * );
-         */
         [DllImport("Httpapi.dll")]
         internal static extern uint HttpQueryServiceConfiguration(IntPtr ServiceHandle, HTTP_SERVICE_CONFIG_ID ConfigId, IntPtr pInputConfigInfo, uint InputConfigLength, IntPtr pOutputConfigInfo, uint OutputConfigInfoLength, ref uint pReturnLength, IntPtr pOverlapped);
 
-        /*
-         * ULONG HttpDeleteServiceConfiguration(
-         *     HANDLE ServiceHandle,
-         *     HTTP_SERVICE_CONFIG_ID ConfigId,
-         *     PVOID pConfigInformation,
-         *     ULONG ConfigInformationLength,
-         *     LPOVERLAPPED pOverlapped
-         * );
-         */
         [DllImport("Httpapi.dll")]
         internal static extern uint HttpDeleteServiceConfiguration(IntPtr ServiceHandle, HTTP_SERVICE_CONFIG_ID ConfigId, IntPtr pConfigInformation, uint ConfigInformationLength, IntPtr pOverlapped);
     }
 
-    /*
-     * typedef struct _HTTPAPI_VERSION
-     * {
-     *     USHORT HttpApiMajorVersion;
-     *     USHORT HttpApiMinorVersion;
-     * } HTTPAPI_VERSION,  *PHTTPAPI_VERSION;
-     */
     internal struct HTTPAPI_VERSION
     {
         public ushort HttpApiMajorVersion;
         public ushort HttpApiMinorVersion;
     }
 
-    /*
-     * typedef enum _HTTP_SERVICE_CONFIG_ID
-     * {
-     *     HttpServiceConfigIPListenList,
-     *     HttpServiceConfigSSLCertInfo,
-     *     HttpServiceConfigUrlAclInfo,
-     *     HttpServiceConfigTimeout,
-     *     HttpServiceConfigMax
-     * }HTTP_SERVICE_CONFIG_ID,  *PHTTP_SERVICE_CONFIG_ID;
-     */
     internal enum HTTP_SERVICE_CONFIG_ID
     {
         HttpServiceConfigIPListenList,
@@ -259,13 +198,6 @@ namespace HttpNamespaceManager.Lib
         HttpServiceConfigMax
     }
 
-    /*
-     * typedef struct _HTTP_SERVICE_CONFIG_URLACL_QUERY {
-     *     HTTP_SERVICE_CONFIG_QUERY_TYPE QueryDesc;
-     *     HTTP_SERVICE_CONFIG_URLACL_KEY KeyDesc;
-     *     DWORD dwToken;
-     * } HTTP_SERVICE_CONFIG_URLACL_QUERY,  *PHTTP_SERVICE_CONFIG_URLACL_QUERY;
-     */
     [StructLayout(LayoutKind.Sequential)]
     internal struct HTTP_SERVICE_CONFIG_URLACL_QUERY
     {
@@ -274,14 +206,6 @@ namespace HttpNamespaceManager.Lib
         public uint dwToken;
     }
 
-    /*
-     * typedef enum _HTTP_SERVICE_CONFIG_QUERY_TYPE
-     * {
-     *     HttpServiceConfigQueryExact,
-     *     HttpServiceConfigQueryNext,
-     *     HttpServiceConfigQueryMax
-     * } HTTP_SERVICE_CONFIG_QUERY_TYPE,  *PHTTP_SERVICE_CONFIG_QUERY_TYPE;
-     */
     internal enum HTTP_SERVICE_CONFIG_QUERY_TYPE
     {
         HttpServiceConfigQueryExact,
@@ -289,25 +213,12 @@ namespace HttpNamespaceManager.Lib
         HttpServiceConfigQueryMax
     }
 
-    /*
-     * typedef struct _HTTP_SERVICE_CONFIG_URLACL_KEY
-     * {
-     *     PWSTR pUrlPrefix;
-     * } HTTP_SERVICE_CONFIG_URLACL_KEY, *PHTTP_SERVICE_CONFIG_URLACL_KEY;
-     */
     internal struct HTTP_SERVICE_CONFIG_URLACL_KEY
     {
         [MarshalAs(UnmanagedType.LPWStr)]
         public string pUrlPrefix;
     }
 
-    /*
-     * typedef struct _HTTP_SERVICE_CONFIG_URLACL_SET
-     * {
-     *     HTTP_SERVICE_CONFIG_URLACL_KEY KeyDesc;
-     *     HTTP_SERVICE_CONFIG_URLACL_PARAM ParamDesc;
-     * } HTTP_SERVICE_CONFIG_URLACL_SET,  *PHTTP_SERVICE_CONFIG_URLACL_SET;
-     */
     [StructLayout(LayoutKind.Sequential)]
     internal struct HTTP_SERVICE_CONFIG_URLACL_SET
     {
@@ -315,12 +226,6 @@ namespace HttpNamespaceManager.Lib
         public HTTP_SERVICE_CONFIG_URLACL_PARAM ParamDesc;
     }
 
-    /*
-     * typedef struct _HTTP_SERVICE_CONFIG_URLACL_PARAM
-     * {
-     *     PWSTR pStringSecurityDescriptor;
-     * } HTTP_SERVICE_CONFIG_URLACL_PARAM,  *PHTTP_SERVICE_CONFIG_URLACL_PARAM;
-     */
     internal struct HTTP_SERVICE_CONFIG_URLACL_PARAM
     {
         [MarshalAs(UnmanagedType.LPWStr)]
