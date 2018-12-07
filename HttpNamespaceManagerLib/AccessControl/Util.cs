@@ -25,26 +25,12 @@ namespace HttpNamespaceManager.Lib.AccessControl
         [DllImport("kernel32.dll", CharSet = CharSet.Auto)]
         private static extern uint FormatMessage(uint dwFlags, IntPtr lpSource, uint dwMessageId, uint dwLanguageId, [MarshalAs(UnmanagedType.LPTStr)] ref string lpBuffer, int nSize, IntPtr[] Arguments);
 
-        /*
-         * DWORD GetLastError(void);
-         */
         [DllImport("kernel32.dll")]
         internal static extern uint GetLastError();
 
-        /*
-         * HLOCAL LocalAlloc(
-         *     UINT uFlags,
-         *     SIZE_T uBytes
-         * );
-         */
         [DllImport("Kernel32.dll")]
         internal static extern IntPtr LocalAlloc(LocalAllocFlags uFlags, uint uBytes);
 
-        /*
-         * HLOCAL LocalFree(
-         *     HLOCAL hMem
-         * );
-         */
         [DllImport("Kernel32.dll")]
         internal static extern IntPtr LocalFree(IntPtr hMem);
     }
