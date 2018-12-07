@@ -1,4 +1,5 @@
-# HttpNamespaceManager
+# ![Logo](https://raw.githubusercontent.com/RobThree/HttpNamespaceManager/master/Icon/64.png) HttpNamespaceManager
+
 Paul Wheeler's HttpNamespacemanager - with minor improvements.
 
 <p align="center">
