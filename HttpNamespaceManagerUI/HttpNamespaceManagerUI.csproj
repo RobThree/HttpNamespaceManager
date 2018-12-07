@@ -134,7 +134,6 @@
     <None Include="Resources\SecurityIconSmall.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Lock.ico" />
     <None Include="Resources\Security.ico" />
   </ItemGroup>
   <ItemGroup>
