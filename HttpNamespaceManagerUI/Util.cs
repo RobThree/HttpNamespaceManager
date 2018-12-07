@@ -28,35 +28,12 @@ namespace HttpNamespaceManager.UI
         [DllImport("kernel32.dll", CharSet = CharSet.Auto)]
         private static extern uint FormatMessage(uint dwFlags, IntPtr lpSource, uint dwMessageId, uint dwLanguageId, [MarshalAs(UnmanagedType.LPTStr)] ref string lpBuffer, int nSize, IntPtr[] Arguments);
 
-        /*
-         * DWORD GetLastError(void);
-         */
+
         [DllImport("kernel32.dll")]
         internal static extern uint GetLastError();
     }
 
-    /*
-     * typedef enum _TOKEN_INFORMATION_CLASS
-     * {
-     *     TokenUser = 1,
-     *     TokenGroups,
-     *     TokenPrivileges,
-     *     TokenOwner,
-     *     TokenPrimaryGroup,
-     *     TokenDefaultDacl,
-     *     TokenSource,
-     *     TokenType,
-     *     TokenImpersonationLevel,
-     *     TokenStatistics,
-     *     TokenRestrictedSids,
-     *     TokenSessionId,
-     *     TokenGroupsAndPrivileges,
-     *     TokenSessionReference,
-     *     TokenSandBoxInert,
-     *     TokenAuditPolicy,
-     *     TokenOrigin
-     * } TOKEN_INFORMATION_CLASS;
-     */
+
     internal enum TOKEN_INFORMATION_CLASS
     {
         TokenUser = 1,
